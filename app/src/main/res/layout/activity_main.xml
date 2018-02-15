@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.umpirebuddy.MainActivity">
+
+    <TextView
+        android:id="@+id/ballValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ball_button"
+        android:layout_alignLeft="@+id/strikeValue"
+        android:layout_alignStart="@+id/strikeValue"
+        android:layout_marginBottom="49dp"
+        android:text="Ball: 0"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/strikeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ballValue"
+        android:layout_alignLeft="@+id/ball_button"
+        android:layout_alignStart="@+id/ball_button"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:text="Strike: 0"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <Button
+        android:id="@+id/ball_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/strike_button"
+        android:layout_alignEnd="@+id/strike_button"
+        android:layout_alignLeft="@+id/strike_button"
+        android:layout_alignRight="@+id/strike_button"
+        android:layout_alignStart="@+id/strike_button"
+        android:paddingHorizontal="80dp"
+        android:text="Ball" />
+
+    <Button
+        android:id="@+id/strike_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="77dp"
+        android:layout_marginStart="77dp"
+        android:paddingHorizontal="80dp"
+        android:text="Strike" />
+
+    <TextView
+        android:id="@+id/outsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/strike_button"
+        android:layout_alignStart="@+id/strike_button"
+        android:layout_below="@+id/strike_button"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="44dp"
+        android:text="Total Outs: 0"
+        android:textSize="20sp" />
+
+</RelativeLayout>
